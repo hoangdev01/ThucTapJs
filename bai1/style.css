@@ -1,0 +1,103 @@
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+li {
+  list-style: none;
+}
+.clear {
+  clear: both;
+}
+#wrapper {
+  top: 0px;
+  width: 100%;
+  height: 1000px;
+  z-index: 999;
+  position: fixed;
+}
+#modal {
+  width: 500px;
+  margin: 250px auto;
+  background: white;
+  height: 300px;
+  z-index: 1000;
+}
+#head {
+  display: flex;
+  height: 40px;
+  justify-content: space-between;
+  border-bottom: 2px solid #ebebeb;
+}
+#pr span {
+  display: inline-block;
+  margin-top: 20px;
+  margin-left: 10px;
+}
+#board {
+  color: black;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+#close {
+  display: inline-block;
+  background-color: black;
+  border-radius: 100%;
+  border: 1px solid black;
+  background-image: url(close.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right center;
+  height: 20px;
+  margin: 10px 10px;
+  width: 20px;
+  text-indent: -1000000px;
+  cursor: pointer;
+}
+.container {
+  z-index: 1;
+  margin: 10px auto;
+  width: 900px;
+  position: relative;
+  padding-left: 0px !important;
+}
+.tag-n {
+  display: inline-block;
+  float: left;
+  padding: 10px;
+  font-size: 30px;
+  border: 2px solid black;
+  cursor: pointer;
+}
+.tag-n.active {
+  background-color: rgba(51, 51, 51, 0.788) !important;
+  color: rgb(226, 225, 225);
+}
+.tag-n.hover {
+  background-color: rgba(177, 177, 177, 0.349);
+}
+.content {
+  display: none;
+  width: 100%;
+  left: 0px;
+  top: 100%;
+  border: 2px solid black;
+  position: absolute;
+  height: 670px;
+  overflow: scroll;
+}
+.content.active {
+  display: inline-block;
+}
+.form-group {
+  width: 80%;
+  margin: 0 auto;
+}
+form {
+  margin-top: 20px;
+}
